@@ -1,4 +1,4 @@
-title: looksgoood Tech Blog
+title: looksgoood
 email: looksgoood12@gmail.com
 description: |
   회사원이 아닌 개발자가 되보자.
@@ -58,10 +58,8 @@ google_analytics:
   ua: 'UA-72007721-1'
 facebook:
   app_id: '1204347326263800'
-  username: nkakao
-twitter:
-  username: kakaodev
+  username: looksgoood
 google_plus:
-  username: kakaodev
+  username: looksgoood12
 github_url:
-  username: kakao
+  username: looksgoood

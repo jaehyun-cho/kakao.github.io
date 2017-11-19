@@ -1,10 +1,11 @@
 ---
 layout: post
-title: '카카오 신입 공채 3차 코딩 테스트 문제 해설'
-author: danny.park
-date: 2017-11-14 11:20
-tags: [kakao, recruitment]
-image: /files/covers/employment_cover.png
+title: '조제현 일상'
+author: jaehyun3.cho
+date: 2017-11-19 22:19
+tags: [jaehyun]
+category: 'life'
+#image: /files/covers/employment_cover.png
 ---
 
 블라인드 채용으로 관심을 모은 카카오 신입 공채의 세 번째 테스트가 지난 10월 29일(일), 오후 2시부터 6시까지 네 시간에 걸쳐 오프라인으로 치러졌습니다. 두 차례의 온라인 테스트를 통과한 지원자들이 한 자리에 모여 다시 한번 실력을 검증하는 자리를 가졌습니다.
