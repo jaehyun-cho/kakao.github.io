@@ -1,9 +1,9 @@
 ---
 layout: post
 title: '카카오 신입 공채 3차 코딩 테스트 문제 해설'
-author: danny.park
+author: jaehyun3.cho
 date: 2017-11-14 11:20
-tags: [kakao, recruitment, jaehyun]
+tags: [jaehyun]
 category: 'tech'
 image: /files/covers/employment_cover.png
 ---
