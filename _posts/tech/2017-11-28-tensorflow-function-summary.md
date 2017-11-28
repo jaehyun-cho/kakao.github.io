@@ -6,7 +6,7 @@ date: 2017-11-28 22:22
 tags: [tensorflow]
 comments: true
 category: 'tech'
-image: /files/covers/tensorflow.png
+image: /files/covers/tensorflow.jpg
 ---
 
 텐서플로우에 대해서 기초부터 조금씩 공부를 해보고 있는 중입니다. 이 페이지에서는 예제를 진행해 나가면서 잘 모르겠거나 의미(?)있는 텐서플로우 함수들에 대한 개인적인 이해를 바탕으로한 설명과 예제를 간단하게 적어볼 생각입니다.
