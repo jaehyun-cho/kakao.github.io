@@ -1,4 +1,4 @@
-tech.kakao.com
+looksgoood.github.io
 ==============
 
 > 주의: [GitHub Pages]와 [Jekyll]에 대해서 충분히 숙지할 것.
