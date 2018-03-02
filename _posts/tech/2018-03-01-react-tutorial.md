@@ -34,6 +34,15 @@ loader 모듈을 정의할 때 react-hot, babel 과 같이 사용하던 것이 �
 
 react-hot-loader는 전체를 refresh하는 대신 reflow, repaint 된 부분만 load할 수 있는 모듈인데 이를 위처럴 react-hot-loader라고 쓰고 사용하려고 하니 **react-hot-loader/index.js' is not a loader (must have normal or pitch function)**과 같은 에러가 발생하여 확인하니 [확인사이트](https://teamtreehouse.com/community/reacthotloaderindexjs-is-not-a-loader-must-have-normal-or-pitch-function)에서 보는 바와 같이 /webpack을 붙이면 해결할 수 있다고 하여 똑같이 적용해보니 또 다른 에러가 나고있는 상황이다.
 
+error log
+----------
+> ERROR in multi (webpack)-dev-server/client?http://0.0.0.0:7777 webpack/hot/dev-server ./src/index.js
+>
+> Module not found: Error: Can't resolve 'react-hot-loader/webpack' in '/Users/jacob/Desktop/Git/React_study/react-tutorial'
+>
+> @ multi (webpack)-dev-server/client?http://0.0.0.0:7777 webpack/hot/dev-server ./src/index.js
+
+변경 전 코드
 ```javascript
     module: {
         rules: [
@@ -48,13 +57,28 @@ react-hot-loader는 전체를 refresh하는 대신 reflow, repaint 된 부분만
         ]
     },
 ```
-error log
-----------
-> ERROR in multi (webpack)-dev-server/client?http://0.0.0.0:7777 webpack/hot/dev-server ./src/index.js
->
-> Module not found: Error: Can't resolve 'react-hot-loader/webpack' in '/Users/jacob/Desktop/Git/React_study/react-tutorial'
->
-> @ multi (webpack)-dev-server/client?http://0.0.0.0:7777 webpack/hot/dev-server ./src/index.js
 
+react-hot-loader 의 [공식 사이트](https://www.npmjs.com/package/react-hot-loader)를 참조하여 react-hot-loader를 loaders 에서 불러오지 않고 아래와 같이 수정하였다. <del>이와 같이 하면 compile은 되지만 velopert 강좌에서 나온것 처럼 local props의 state를 저장하지 못하는것을 해결하진 못한다.</del> 최종적으로 아래와 같이 하여 react-hot-loader가 동작하는걸 확인하였는데, config파일을 잘못만들었다기 보다는 webpack(v4.0.0 -> v3.10.0)과 webpack-dev-server(v3.1.0 -> v2.9.7)의 버전을 바꿔주니 동작하였다. react-hot-loader의 공식 [github의 webpack 예제](https://github.com/gaearon/react-hot-loader/tree/master/examples/webpack)를 참고하여 수정하였는데, 다른부분을 다 수정해도 정상적으로 동작하지 않아 확인하던 중, 버전이 다른걸 확인하였고 이를 바꿔주었더니 동작하였다. 향후 최신 버전으로도 되어야 할텐데 일단은 webpack에 항복하고 이렇게 사용해야겠다..ㅠ
 
-......
+변경 후 코드
+```javascript
+// webpack.config.js file
+    module: {
+        rules: [
+          {
+            exclude: /node_modules|packages/,
+            test: /\.js$/,
+            use: 'babel-loader',
+          },
+        ],
+    },
+
+// .babelrc file
+{
+  "presets": ["env", "react"],
+  "plugins": ["react-hot-loader/babel", "transform-class-properties"]
+}
+```
+
+### TODO
+webpack(v4.0.0)과 webpack-dev-server(v3.1.0)에서도 react-hot-loader가 정상적으로 동작하도록 수정하고 post하기
