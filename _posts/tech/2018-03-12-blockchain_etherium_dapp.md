@@ -28,7 +28,7 @@ $ npm install -g remixd
 
 npm은 sudo (root 권한)을 이용해서 깔지 말라고 권고하고 있다고 한다. 이를 모른 생초보는 permission 관련 에러가 뜨자마자 당연하게도 sudo를 뭍여서 다시 실행하였고 여러 npm 패키지들을 이렇게 깔았었다. 하지만 remixd는 깔려고 하니 <u>**root user는 remixd의 module을 접근할 권한이 없다와 같은 에러로그**</u>를 띄우며 나를 힘들게 하였다. 때문에 sudo를 사용하지 않으면 발행하는 문제를 해결하는 방법을 찾아야했다. 다행스럽게도 npm 공식 site getting started에 [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions)라는 이름으로 친절히 설명해 주고있다. 나는 node version manager를 reinstall하는 방법을 택하였다.([방법](https://github.com/creationix/nvm/blob/master/README.md#installation)) 이 방법으로 sudo 문제는 해결할 수 있었다.  
 ```
-$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+$ curl -o- ht<span>tps://</span>raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 ```
 
 ### node-gyp
