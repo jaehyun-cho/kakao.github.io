@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.3/milligram.min.css">
+        <title>Simple Storage Dapp Example</title>
+        <style>
+            body {margin-left:50px}
+            #storedData {font-size: 300%; margin-right: 10px;}
+            #newValue {width:200px; margin-right: 10px; text-align: right;}
+        </style>
+    </head>
+    <body>
+        <h3>Simple Storage Dapp Example</h3>
+        <ul>
+            <li>Contract Address: <span id="contractAddr"></span></li>
+            <li>My Account Address: <span id="accountAddr"></span></li>
+            <li>Stored Contract Value: <span id="storedData"></span>
+              <button onclick="getValue()">Refresh</button> (Current Block: <span id="lastBlock"></span>)
+            </li>
+            <li>
+              <input id="newValue" type="text"><button onclick="setValue()">Update with new Value</button>
+              <div id="result"></div>
+            </li>
+            <li>The page is automatically updated, after pending transaction(update new value) is verified in blockchain.</li>
+        </ul>
+
+        Contract source
+        <script src="https://gist.github.com/looksgoood/db201cbd37a825a5dd692fa8c659dbb1.js"></script>
+
+        HTML source<br>
+        <a href="test">123123123</a>
+        <br><br>
+        <p>
+            <a href="https://github.com/looksgoood">looksgoood github link</a>
+        </p>
+    </body>
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <!-- script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script -->
+    <script src="simplestorage.js"></script>
+    
+</html>
