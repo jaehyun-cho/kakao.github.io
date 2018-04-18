@@ -7,7 +7,71 @@ sitemap: yes
 tags: [about]
 ---
 
-[looksgoood](https://looksgoood.github.io) 조제현의 일상&기술블로그입니다.
+[looksgoood](https://looksgoood.github.io) 조제현의 일상&기술 블로그입니다.
+
+# Careers
+
+## 한양대학교 컴퓨터 공학 전공 (2008.3 ~ 2014.2)
+
+## 삼성전자 Samsung Research (2014.1 ~ 현재)
+
+### Tizen Platform Release management (2014)
+- tizen 2.3, 2.4 mobile, tv, wearable에 대한 platform relaese engineering
+- OBS(open build service), Jenkins, Jira, Confluence 등을 통한 release 지표 관리 및 issue reporting
+- python, node.js를 이용한 다양한 툴 개발  
+  (tizen test automation, binary information diff 분석, package manager 관리 script, SR 관리 프로그램)
+* 기술 스택: git, obs, jenkins
+  
+
+### Samsung Gear S2와 iOS연동 protocol 개발 (2015)
+- BLE GATT profile을 이용한 정송 protocol 설계 및 구현
+- fragment/reassemble 및 retransmission, CRC check  프로세스 개발
+- glib, IPC(dbus)를 이용한 daemon 개발
+* 기술 스택 : glib, dbus, gdb, tizen, C
+* gear S2 ios 연동 solution 상용화(https://itunes.apple.com/us/app/samsung-gear-s/id1117310635?mt=8)
+  
+
+### Samsung IoTivity 상품화 (2016)
+- IoTivity의 iOS 지원을 위한 objective-C wrapper layer API 개발
+- Samsung connect auto(OBD2) client(iOS) connection manager 모듈 개발
+  - IoTivity BLE transport의 connection 유지를 위한 모듈 개발 및 상품화 적용
+* 기술 스택: IoTivity, iOS, objective-C, BLE, GATT
+  
+
+### IoTivity open source contribution (2016)
+- CoAP over BLE-GATT protocol 개발 ([IOT-1210](https://jira.iotivity.org/browse/IOT-1210) / [PATCH](https://gerrit.iotivity.org/gerrit/#/c/9979/))  
+  [IoTivity commit 내역](https://github.com/iotivity/iotivity/commits?author=looksgoood)  
+  이 프로토콜에 대한 논문 참여 [PAPER](https://www.semanticscholar.org/paper/CoAP-over-BLE-GATT-for-OCF-Yoon-Choi/3e5de2a180d033db1bb3bcf70837f103174eae3f)
+- TCP connection manager 개발 ([IOT-154](https://jira.iotivity.org/browse/IOT-1540) / [PATCH](https://gerrit.iotivity.org/gerrit/#/c/15909/) / [WIKI](https://wiki.iotivity.org/connection_manager_d2s_to_d2d))
+* 기술 스택: protocol, connectivity, BLE, GATT, TCP, Mux, CoAP, IoTivity, C
+  
+
+### IoTivity open source contribution (2017)
+- Smart Home API 설계 및 구현 ([CODE](https://github.com/iotivity/iotivity/tree/smarthome_api) / [WIKI](https://wiki.iotivity.org/proposal_for_iotivity_smart_home_api))
+  - 기존 IoTivity의 사용성을 개선한 API 개발
+  - OCF Device [spec](https://openconnectivity.org/specs/OCF_Device_Specification_v1.3.0.pdf) 에 따른 설계 및 개발 진행
+  - [IOT-1890](https://jira.iotivity.org/browse/IOT-1890)
+* 기술 스택: API, C++, OOP, Singleton pattern, Pimpl idiom, IoTivity, OCF
+  
+
+### Lightweight OCF stack 개발 (2017)
+- OCF spec을 만족하는 경량화 된 stack 개발
+- Contiki OS에 사용된 er-coap을 기반으로 coap module 개발 (transaction, blockwise transfer, CoAP over TCP등)
+- ip 통신을 위한 udp/tcp 통신 모듈 개발
+- queue, list등의 자료구조에 thread safety 지원을 위한 lock free algorithm 적용 (CAS)
+- Code repository : https://github.com/Samsung/RT-OCF
+* 기술 스택: Tizen RT, RTOS, CoAP, Blockwise transfer, CoAP over TCP, CAS, OCF, pthread, mutex
+  
+
+### IoTivity-constrained code contribution (2018)
+- 기존 OCF 코드인 Iotivity 대비 메모리를 효율화 하여 RTOS에서 사용할 수 있도록 만든 stack 개발
+- ...
+- Code repository : https://github.com/iotivity/iotivity-constrained
+* 기술 스택: Tizen RT, RTOS, CoAP, CoAP over TCP, OCF, Free RTOS
+  
+
+### 특이사항
+- Samsung software certificate Professional 등급 취득
 
 Powered by [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com).
 
