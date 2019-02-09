@@ -28,7 +28,7 @@ tags: [about]
 - fragment/reassemble 및 retransmission, CRC check  프로세스 개발
 - glib, IPC(dbus)를 이용한 daemon 개발
 * 기술 스택 : glib, dbus, gdb, tizen, C
-* gear S2 ios 연동 solution 상용화(https://itunes.apple.com/us/app/samsung-gear-s/id1117310635?mt=8)
+* gear S2 ios 연동 solution 상용화([Link](https://itunes.apple.com/us/app/samsung-gear-s/id1117310635?mt=8))
   
 
 ### Samsung IoTivity 상품화 (2016)
@@ -59,19 +59,24 @@ tags: [about]
 - Contiki OS에 사용된 er-coap을 기반으로 coap module 개발 (transaction, blockwise transfer, CoAP over TCP등)
 - ip 통신을 위한 udp/tcp 통신 모듈 개발
 - queue, list등의 자료구조에 thread safety 지원을 위한 lock free algorithm 적용 (CAS)
-- Code repository : https://github.com/Samsung/RT-OCF
+- Code repository : [https://github.com/Samsung/RT-OCF](https://github.com/Samsung/RT-OCF)
 * 기술 스택: Tizen RT, RTOS, CoAP, Blockwise transfer, CoAP over TCP, CAS, OCF, pthread, mutex
   
 
-### IoTivity-constrained code contribution (2018)
+### IoTivity-constrained code contribution 및 3rd party 업체 상품화 (2018)
 - 기존 OCF 코드인 Iotivity 대비 메모리를 효율화 하여 RTOS에서 사용할 수 있도록 만든 stack 개발
-- ...
-- Code repository : https://github.com/iotivity/iotivity-constrained
+- CoAP over TCP code contribution
+- 삼성 클라우드와 연동을 위한 Framework 개발
+- Code repository : [https://github.com/iotivity/iotivity-constrained/tree/samsung](https://github.com/iotivity/iotivity-constrained/tree/samsung)
 * 기술 스택: Tizen RT, RTOS, CoAP, CoAP over TCP, OCF, Free RTOS
   
 
-### 특이사항
-- Samsung software certificate Professional 등급 취득
+### 자격 및 인증
+- Samsung Software Certificate Professional 등급 취득
+- Samsung Software Associate Architect 취득
 
-Powered by [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com).
 
+### 대외 활동
+- 싸이그래머 Deep Choice 스터디 (Reinforcement Learning및 Machine Learning) (2019.1 ~)
+- GDG(Google Developer Group) Korea 행사 참여 (2019.1)
+- Google Machine Learning Study Jam (2019.2 ~)
