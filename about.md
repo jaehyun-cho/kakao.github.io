@@ -13,6 +13,10 @@ tags: [about]
 
 ## 한양대학교 컴퓨터 공학 전공 (2008.3 ~ 2014.2)
 
+### 정보과학회 논문
+- 자연어처리 기반의 후보 주제어 선정을 통한 주제어 추출 성능 개선
+- 논문: [Link](https://www.dbpia.co.kr/Journal/ArticleDetail/NODE02323523)
+
 ## 삼성전자 Samsung Research (2014.1 ~ 현재)
 
 ### Tizen Platform Release management (2014)
