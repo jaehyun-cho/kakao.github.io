@@ -28,7 +28,7 @@ tags: [about]
   
 
 ### Samsung Gear S2와 iOS연동 protocol 개발 (2015)
-- BLE GATT profile을 이용한 정송 protocol 설계 및 구현
+- BLE GATT profile을 이용한 transfer protocol 설계 및 구현
 - fragment/reassemble 및 retransmission, CRC check  프로세스 개발
 - glib, IPC(dbus)를 이용한 daemon 개발
 * 기술 스택 : glib, dbus, gdb, tizen, C
@@ -73,7 +73,18 @@ tags: [about]
 - 삼성 클라우드와 연동을 위한 Framework 개발
 - Code repository : [https://github.com/iotivity/iotivity-constrained/tree/samsung](https://github.com/iotivity/iotivity-constrained/tree/samsung)
 * 기술 스택: Tizen RT, RTOS, CoAP, CoAP over TCP, OCF, Free RTOS
-  
+
+### KEPCO Demand Response(DR) 서비스 상품화 (2018~2019)
+- OCF 2.0 spec을 만족하는 iotivity stack 개발
+- KEPCO cloud와 연동하는 Things framework 개발
+- 삼성 시스템 에어컨 일부모델 탑제 상품화 진행중
+* 기술 스택: REST, CoAP, Tizen, JWT, 
+
+### Multi device 기반 context share framework 개발 (2019)
+- Home mesh network를 구성하여, home 내의 기기들의 context 정보를 수집하고, local execution 할 수 있는 환경을 제공하는 framework 개발
+- Access control list를 관리해 주는 cloud service 개발
+- Bixby on device control(IR Blaster) 개발
+* 기술 스택: REST, MSA. glib, BLE, android, JNI, ndk, IPC, dbus, cloud, JAVA, C, 
 
 ### 자격 및 인증
 - Samsung Software Certificate Professional 등급 취득
@@ -84,3 +95,12 @@ tags: [about]
 - 싸이그래머 Deep Choice 스터디 (Reinforcement Learning및 Machine Learning) (2019.1 ~)
 - GDG(Google Developer Group) Korea 행사 참여 (2019.1)
 - Google Machine Learning Study Jam (2019.2 ~)
+- [DDD](https://www.facebook.com/dddstudy/) 활동
+  - ForUrth android application 개발 (Backend 담당)
+  - Django Framework 사용
+  - REST API 및 계정, DB 서버 구축
+  - [LINK](https://github.com/desingdeveloperdayday/PickedUpMole_ForEarthForUs)
+- 삼성전자 사회공헌단 OneWeek 태국 치앙마이 봉사활동
+  - IT 솔루션을 활용하여 소수민족 여성분들이 만드는 수공예품 판매 활성화
+  - Brand tag 와 SNS posting을 도와주는 Application 개발
+  - [Repository](https://github.com/dongs0104/pricetag)
