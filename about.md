@@ -67,11 +67,11 @@ tags: [about]
 * 기술 스택: Tizen RT, RTOS, CoAP, Blockwise transfer, CoAP over TCP, CAS, OCF, pthread, mutex
   
 
-### IoTivity-constrained code contribution 및 3rd party 업체 상품화 (2018)
+### IoTivity-lite code contribution 및 3rd party 업체 상품화 (2018)
 - 기존 OCF 코드인 Iotivity 대비 메모리를 효율화 하여 RTOS에서 사용할 수 있도록 만든 stack 개발
 - CoAP over TCP code contribution
 - 삼성 클라우드와 연동을 위한 Framework 개발
-- Code repository : [https://github.com/iotivity/iotivity-constrained/tree/samsung](https://github.com/iotivity/iotivity-constrained/tree/samsung)
+- Code repository : [https://github.com/iotivity/iotivity-lite/tree/samsung](https://github.com/iotivity/iotivity-lite/tree/samsung)
 * 기술 스택: Tizen RT, RTOS, CoAP, CoAP over TCP, OCF, Free RTOS
 
 ### KEPCO Demand Response(DR) 서비스 상품화 (2018~2019)
